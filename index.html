@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME - Produtos Notáveis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Produtos Notáveis</h1>
+        </div>
+        
+        <nav id="nav-desktop">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="origem.html">Origem</a></li>
+                <li><a href="geometria.html">Laboratório</a></li>
+                <li><a href="desafio-final.html">Desafio Final</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button id="btn-theme" class="btn-icon" aria-label="Alternar Tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="btn-open" class="btn-icon btn-mobile" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav id="nav-mobile" class="nav-mobile hidden">
+        <button id="btn-close" class="btn-icon btn-close" aria-label="Fechar Menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="mobile-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="origem.html">Origem</a></li>
+            <li><a href="geometria.html">Laboratório</a></li>
+            <li><a href="desafio-final.html">Desafio Final</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <section class="hero">
+            <div class="hero-texto">
+                <h2>Por que decorar se você pode enxergar?</h2>
+                <p>Esqueça a decoreba cega. Nesta jornada, você vai descobrir que a álgebra não é um bicho de sete cabeças, mas um grande quebra-cabeça geométrico. Vamos desmontar equações e provar visualmente por que os atalhos matemáticos realmente funcionam.</p>
+            </div>
+            <div class="hero-imagem">
+                <img src="./images/euclides.jpg" alt="Estátua de Euclides.">
+            </div>
+        </section>
+        <section class="context">
+            <h2>O Que São Produtos Notáveis?</h2>
+            <article>
+                <p>
+                    Imagine que você encontrou um caminho secreto que corta caminho para chegar mais rápido ao seu destino. Na matemática, um <strong>Produto Notável</strong> funciona exatamente assim: ele é um "atalho" de inteligência. Os matemáticos perceberam que certas multiplicações aparecem com tanta frequência que não faz sentido repetir todo o processo da propriedade distributiva todas as vezes. Criar esse atalho é otimizar o seu esforço mental.
+                </p>
+                <p>
+                    Mas esses atalhos não vivem apenas nos livros. Eles são ferramentas fundamentais para resolver problemas do mundo real, como calcular a área exata para o design de um novo <strong>processador</strong> em uma pastilha de silício ou planejar a expansão da planta de uma casa de forma rápida. Nesta jornada, você vai aprender a enxergar esses padrões e converter expressões abstratas em modelos geométricos que você pode realmente visualizar.
+                </p>
+            </article>
+        </section>
+        <section class="map">
+            <div>
+                <div>
+                    <h3>Fase 01:</h3>
+                    <h4>A geometria do erro</h4>
+                </div>
+                <div>
+                    <h3>Fase 02:</h3>
+                    <h4>A máquina de padrões</h4>
+                </div>
+                <div>
+                    <h3>Fase 03:</h3>
+                    <h4>O caminho reverso</h4>
+                </div>
+            </div>
+        </section>
+        <section class="evaluation">
+            <form action="#">
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome" required>
+                <label for="comentario">Seu comentário:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                <label for="termometro">Termômetro do Conhecimento:</label>
+                <select name="Termometro do Conhecimento" id="termometro">
+                    <option value="1">1 - Ainda não sei de nada</option>
+                    <option value="2">2 - Já ouvi falar</option>
+                    <option value="3">3 - Conheço</option>
+                    <option value="4">4 - Consigo explicar para um amigo</option>
+                    <option value="5">5 - Consigo aplicar em um problema real</option>
+                </select>
+                <label for="turma">Sua turma:</label>
+                <select name="turma" id="turma">
+                    <option value="1">1 - 9° ano A</option>
+                    <option value="2">2 - 9° ano B</option>
+                    <option value="3">3 - 9° ano C</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026. Projeto de Desenvolvimento WEB (OxeTech-AL).</p>
+        <p>Desenvolvido por Abraão Correia.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
