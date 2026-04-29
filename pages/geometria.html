@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório - Produtos Notáveis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <div class="logo">
+            <h1>Laboratório - Produtos Notáveis na Geometria</h1>
+        </div>
+        
+        <nav id="nav-desktop">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="origem.html">Origem</a></li>
+                <li><a href="geometria.html">Laboratório</a></li>
+                <li><a href="desafio-final.html">Desafio Final</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button id="btn-theme" class="btn-icon" aria-label="Alternar Tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="btn-open" class="btn-icon btn-mobile" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav id="nav-mobile" class="nav-mobile hidden">
+        <button id="btn-close" class="btn-icon btn-close" aria-label="Fechar Menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="mobile-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="origem.html">Origem</a></li>
+            <li><a href="geometria.html">Laboratório</a></li>
+            <li><a href="desafio-final.html">Desafio Final</a></li>
+        </ul>
+    </nav>
+
+    <main id="geometria">
+        <section class="abismo-erro">
+            <div class="erro-content">
+                <h2>Um erro comum</h2>
+                <p>A intuição grita que para resolver o quadrado de uma soma, basta elevar cada pedaço ao quadrado. Mas isso é um ERRO CRÍTICO.</p>
+                <div class="glitch-box">
+                    <p> </p>
+                    <p><strong>(a + b)<sup>2</sup>  ≠  a<sup>2</sup> + b<sup>2</sup></strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-vapor">
+            <h2 class="titulo-sessao">A Reconstrução Visual</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px;">O objetivo deste laboratório é dominar os Produtos Notáveis transformando regras algébricas em desenhos geométricos tangíveis.</p>
+
+            <h2 class="subtitulo-vapor">1. O Quadrado da Soma de Dois Termos: (a + b)²</h2>
+            <div class="formula-box soma">
+                (a + b)² = a² + 2ab + b²
+            </div>
+            
+            <div class="passos-container">
+                <div class="passo">
+                    <h3>Passo 1: Quadrado Maior</h3>
+                    <p>Lado inteiro mede (a + b).</p>
+                    <div class="diagrama">
+                        <div class="medida medida-topo-total">(a + b)</div>
+                        <div class="medida medida-esq-total">(a + b)</div>
+                        <div class="forma-base">Área Total</div>
+                    </div>
+                </div>
+
+                <div class="passo">
+                    <h3>Passo 2: Dividindo Lados</h3>
+                    <p>Separamos em "a" e "b".</p>
+                    <div class="diagrama">
+                        <div class="medida medida-topo-a">a</div>
+                        <div class="medida medida-topo-b">b</div>
+                        <div class="medida medida-esq-a">a</div>
+                        <div class="medida medida-esq-b">b</div>
+                        <div class="forma-base listrada"></div>
+                    </div>
+                </div>
+
+                <div class="passo">
+                    <h3>Passo 3: As Quatro Áreas</h3>
+                    <p>Faltavam os retângulos ab!</p>
+                    <div class="diagrama">
+                        <div class="medida medida-topo-a">a</div>
+                        <div class="medida medida-topo-b">b</div>
+                        <div class="medida medida-esq-a">a</div>
+                        <div class="medida medida-esq-b">b</div>
+                        
+                        <div class="forma-grid">
+                            <div class="bloco bloco-a2">a²</div>
+                            <div class="bloco bloco-ab">ab</div>
+                            <div class="bloco bloco-ab">ab</div>
+                            <div class="bloco bloco-b2">b²</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divisor-vapor">
+
+            <h2 class="subtitulo-vapor">2. O Quadrado da Diferença: (a - b)²</h2>
+            <div class="formula-box diferenca">
+                (a - b)² = a² - 2ab + b²
+            </div>
+            
+            <div class="passos-container">
+                <div class="passo">
+                    <h3>Passo 1: Área Total</h3>
+                    <div class="diagrama">
+                        <div class="medida medida-topo-total">a</div>
+                        <div class="medida medida-esq-total">a</div>
+                        <div class="forma-base area-total-a">Área = a²</div>
+                    </div>
+                </div>
+
+                <div class="passo">
+                    <h3>Passo 2: 1º Recorte</h3>
+                    <div class="diagrama">
+                        <div class="medida medida-topo-a texto-reduzido">(a - b)</div>
+                        <div class="medida medida-topo-b diferenca-texto">b</div>
+                        <div class="medida medida-esq-total">a</div>
+                        <div class="forma-grid">
+                            <div class="bloco bloco-alvo" style="opacity: 0.5;"></div>
+                            <div class="bloco bloco-removido">Retirado</div>
+                            <div class="bloco bloco-alvo" style="opacity: 0.5;"></div>
+                            <div class="bloco bloco-removido">Retirado</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="passo">
+                    <h3>Passo 3: 2º Recorte</h3>
+                    <div class="diagrama">
+                        <div class="medida medida-topo-a texto-reduzido">(a - b)</div>
+                        <div class="medida medida-topo-b diferenca-texto">b</div>
+                        <div class="medida medida-esq-a texto-reduzido">(a - b)</div>
+                        <div class="medida medida-esq-b diferenca-texto">b</div>
+                        <div class="forma-grid">
+                            <div class="bloco bloco-alvo" style="opacity: 0.5;"></div>
+                            <div class="bloco bloco-removido" style="opacity: 0.3;">Já saiu</div>
+                            <div class="bloco bloco-removido">Retirado</div>
+                            <div class="bloco bloco-interseccao-escura">2x Retirado</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="passo">
+                    <h3>Passo 4: Compensação</h3>
+                    <div class="diagrama">
+                        <div class="medida medida-topo-a texto-reduzido">(a - b)</div>
+                        <div class="medida medida-topo-b diferenca-texto">b</div>
+                        <div class="medida medida-esq-a texto-reduzido">(a - b)</div>
+                        <div class="medida medida-esq-b diferenca-texto">b</div>
+                        <div class="forma-grid">
+                            <div class="bloco bloco-alvo">(a-b)²</div>
+                            <div class="bloco bloco-removido" style="opacity: 0.3;"></div>
+                            <div class="bloco bloco-removido" style="opacity: 0.3;"></div>
+                            <div class="bloco bloco-interseccao">+ b²</div> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="passo">
+                    <h3>Passo 5: Resultado</h3>
+                    <div class="diagrama">
+                        <div class="medida medida-topo-a texto-reduzido">(a - b)</div>
+                        <div class="medida medida-esq-a texto-reduzido">(a - b)</div>
+                        <div class="forma-grid" style="background-color: transparent; border-color: transparent;">
+                            <div class="bloco bloco-alvo" style="border: 2px solid #00ffff;">(a-b)²</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divisor-vapor">
+
+            <h2 class="subtitulo-vapor">3. Produto da Soma pela Diferença: (a + b)(a - b)</h2>
+            <div class="formula-box produto">
+                (a + b)(a - b) = a² - b²
+            </div>
+
+            <div class="passos-container">
+                <div class="passo">
+                    <h3>Passo 1: A Área (a² - b²)</h3>
+                    <div class="diagrama" style="width: 150px; height: 150px; margin: 40px auto 20px auto;">
+                        <div class="medida" style="left: -35px; top: 0; height: 100%; display: flex; align-items: center; transform: rotate(-90deg);">a</div>
+                        <div class="medida" style="top: -25px; left: 0; width: 70%; text-align: center; color: var(--color-primary);">a - b</div>
+                        <div class="medida" style="top: -25px; right: 0; width: 30%; text-align: center; color: var(--color-success);">b</div>
+                        <div style="width: 100%; height: 70%; background-color: rgba(49, 130, 206, 0.2); border: 2px solid var(--color-primary); box-sizing: border-box;"></div>
+                        <div style="display: flex; height: 30%; width: 100%;">
+                            <div style="width: 70%; height: 100%; background-color: rgba(49, 130, 206, 0.2); border: 2px solid var(--color-primary); border-top: none; box-sizing: border-box;"></div>
+                            <div style="width: 30%; height: 100%; background-color: transparent; border: 1px dashed var(--color-primary); border-top: none; border-left: none; box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 0.8em; color: var(--text-main);">- b²</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="passo">
+                    <h3>Passo 2: Separando Peças</h3>
+                    <div class="diagrama" style="width: 150px; height: 160px; margin: 40px auto 20px auto; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div class="medida" style="top: -25px; left: 0; width: 100%; text-align: center;">a</div>
+                        <div style="width: 100%; height: 65%; position: relative;">
+                            <div class="medida" style="left: -35px; top: 0; height: 100%; display: flex; align-items: center; transform: rotate(-90deg); color: var(--color-primary); white-space: nowrap;">a - b</div>
+                            <div style="width: 100%; height: 100%; background-color: rgba(49, 130, 206, 0.2); border: 2px solid var(--color-primary); box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-weight: bold;">Ret. 1</div>
+                        </div>
+                        <div style="width: 70%; height: 28%; position: relative;">
+                            <div class="medida" style="left: -35px; top: 0; height: 100%; display: flex; align-items: center; transform: rotate(-90deg); color: var(--color-success);">b</div>
+                            <div class="medida" style="bottom: -25px; left: 0; width: 100%; text-align: center; color: var(--color-success);">a - b</div>
+                            <div style="width: 100%; height: 100%; background-color: rgba(56, 161, 105, 0.2); border: 2px solid var(--color-success); box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-weight: bold;">Ret. 2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="passo">
+                    <h3>Passo 3: O Encaixe Perfeito</h3>
+                    <div class="diagrama" style="width: 195px; height: 105px; margin: 60px auto 20px auto; display: flex;">
+                        <div class="medida" style="left: -40px; top: 0; height: 100%; display: flex; align-items: center; transform: rotate(-90deg); white-space: nowrap;">a - b</div>
+                        <div class="medida" style="top: -25px; left: 0; width: 150px; text-align: center; color: var(--color-primary);">a</div>
+                        <div class="medida" style="top: -25px; right: 0; width: 45px; text-align: center; color: var(--color-success);">b</div>
+                        <div class="medida" style="top: -50px; left: 0; width: 100%; text-align: center;">(a + b)</div>
+                        <div style="width: 150px; height: 100%; background-color: rgba(49, 130, 206, 0.2); border: 2px solid var(--color-primary); border-right: none; box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-weight: bold;">Ret. 1</div>
+                        <div style="width: 45px; height: 100%; background-color: rgba(56, 161, 105, 0.2); border: 2px solid var(--color-success); box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8em; text-align: center; line-height: 1.2;">Ret. 2<br>girado</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-arcade">
+                <a href="desafio-final.html" class="btn-insert-coin">INSERT COIN ► Desafio Final</a>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026. Projeto de Desenvolvimento WEB (OxeTech-AL).</p>
+        <p>Desenvolvido por Abraão Correia.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
